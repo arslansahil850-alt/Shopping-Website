@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101318">
+    <meta name="description"
+        content="Discover the latest smartphones, laptops, headphones, gaming gear and smart gadgets at Voltix.">
+    <title>Projects | Arslan Weblab</title>
+    <link rel="icon" href="logo.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">V<span>•</span></div>
+            <h2>VOLTIX</h2>
+            <div class="loader-line"><span></span></div>
+        </div>
+    </div>
+
+    <div class="announcement-bar">
+        <p>Next-level tech, better prices. <a href="#deals">Explore today's deals <i
+                    data-lucide="arrow-up-right"></i></a></p>
+        <button class="announcement-close" aria-label="Close announcement"><i data-lucide="x"></i></button>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="header-main container">
+
+            <a href="#home" class="brand" aria-label="Voltix home">
+                <span class="brand-icon">V<span>•</span></span>
+                <span class="brand-name">voltix<span class="brand-dot">.</span></span>
+            </a>
+
+            <form class="search-form" id="searchForm" role="search">
+                <i data-lucide="search"></i>
+                <input type="search" id="searchInput" placeholder="Search smartphones, laptops, headphones..."
+                    aria-label="Search products">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="header-actions">
+                <button class="header-action account-action" id="accountButton" aria-label="Account">
+                    <i data-lucide="user-round"></i>
+                    <span>Account</span>
+                </button>
+                <button class="header-action wishlist-action" id="wishlistButton" aria-label="Wishlist">
+                    <span class="action-icon"><i data-lucide="heart"></i><span class="count-badge"
+                            id="wishlistCount">0</span></span>
+                    <span>Wishlist</span>
+                </button>
+                <button class="header-action cart-action" id="cartButton" aria-label="Shopping cart">
+                    <span class="action-icon"><i data-lucide="shopping-bag"></i><span class="count-badge"
+                            id="cartCount">0</span></span>
+                    <span>Cart</span>
+                </button>
+
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <div class="container nav-inner">
+                <a href="#categories" class="nav-category"><i data-lucide="grid-2x2"></i> All Categories</a>
+                <a href="#products">All Products</a>
+                <a href="#products" data-category-link="smartphones">Smartphones</a>
+                <a href="#products" data-category-link="laptops">Laptops</a>
+                <a href="#products" data-category-link="audio">Audio</a>
+                <a href="#products" data-category-link="gaming">Gaming</a>
+                <a href="#deals" class="nav-deals"><i data-lucide="zap"></i> Hot Deals</a>
+                <a href="#support">Support</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="eyebrow"><span class="status-dot"></span> THE FUTURE IS HERE</div>
+                    <h1>Upgrade your<br>world with <span>better tech.</span></h1>
+                    <p>Discover powerful devices, smarter accessories and the latest technology built for the way you
+                        live.</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary">Shop Collection <i
+                                data-lucide="arrow-up-right"></i></a>
+                        <a href="#categories" class="btn btn-outline">Explore Categories</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-avatars">
+                            <span>A</span><span>M</span><span>S</span><span>+</span>
+                        </div>
+                        <div><strong>10,000+</strong><small>Tech lovers and counting</small></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-glow"></div>
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+                    <img class="hero-image"
+                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=85"
+                        alt="Premium modern smartphone">
+                    <div class="hero-product-tag tag-top"><span class="tag-icon"><i
+                                data-lucide="sparkles"></i></span><span><strong>Next-gen devices</strong><small>Latest
+                                technology</small></span></div>
+                    <div class="hero-product-tag tag-bottom"><span class="tag-icon"><i
+                                data-lucide="truck"></i></span><span><strong>Fast delivery</strong><small>Right to your
+                                door</small></span></div>
+                    <div class="hero-index">01 <span>/</span> 04</div>
+                </div>
+            </div>
+            <div class="hero-bottom container">
+                <span>TECH THAT MOVES YOU</span>
+                <div class="hero-bottom-line"></div>
+                <a href="#categories">Discover more <i data-lucide="arrow-down"></i></a>
+            </div>
+        </section>
+
+        <section class="benefits-strip">
+            <div class="container benefits-grid">
+                <div class="benefit-item"><i data-lucide="truck"></i>
+                    <div><strong>Fast Delivery</strong><span>Quick & reliable shipping</span></div>
+                </div>
+                <div class="benefit-item"><i data-lucide="shield-check"></i>
+                    <div><strong>Genuine Products</strong><span>Quality you can trust</span></div>
+                </div>
+                <div class="benefit-item"><i data-lucide="refresh-cw"></i>
+                    <div><strong>Easy Returns</strong><span>Simple return process</span></div>
+                </div>
+                <div class="benefit-item"><i data-lucide="headset"></i>
+                    <div><strong>Expert Support</strong><span>We're here to help</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section section-padding" id="categories">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="section-kicker">FIND YOUR NEXT FAVORITE</span>
+                        <h2>Shop by <span>category.</span></h2>
+                    </div>
+                    <a href="#products" class="text-link">View all products <i data-lucide="arrow-up-right"></i></a>
+                </div>
+
+                <div class="category-grid">
+                    <button class="category-card category-large" data-category="smartphones">
+                        <span class="category-number">01</span>
+                        <span class="category-info"><strong>Smartphones</strong><small>Power in your
+                                pocket</small></span>
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80"
+                            alt="Smartphone">
+                        <span class="category-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </button>
+                    <button class="category-card" data-category="laptops">
+                        <span class="category-number">02</span>
+                        <span class="category-info"><strong>Laptops</strong><small>Work without limits</small></span>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"
+                            alt="Laptop">
+                        <span class="category-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </button>
+                    <button class="category-card" data-category="audio">
+                        <span class="category-number">03</span>
+                        <span class="category-info"><strong>Audio</strong><small>Hear every detail</small></span>
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                            alt="Headphones">
+                        <span class="category-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </button>
+                    <button class="category-card" data-category="gaming">
+                        <span class="category-number">04</span>
+                        <span class="category-info"><strong>Gaming</strong><small>Level up your play</small></span>
+                        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=600&q=80"
+                            alt="Gaming equipment">
+                        <span class="category-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </button>
+                    <button class="category-card" data-category="accessories">
+                        <span class="category-number">05</span>
+                        <span class="category-info"><strong>Accessories</strong><small>Small things, big
+                                impact</small></span>
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80"
+                            alt="Tech accessories">
+                        <span class="category-arrow"><i data-lucide="arrow-up-right"></i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section section-padding" id="products">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="section-kicker">HANDPICKED FOR YOU</span>
+                        <h2>Explore our <span>collection.</span></h2>
+                    </div>
+                    <p>Thoughtfully selected tech for work, play and everything in between.</p>
+                </div>
+
+                <div class="product-toolbar">
+                    <div class="filter-tabs" id="filterTabs">
+                        <button class="filter-tab active" data-filter="all">All Products</button>
+                        <button class="filter-tab" data-filter="smartphones">Smartphones</button>
+                        <button class="filter-tab" data-filter="laptops">Laptops</button>
+                        <button class="filter-tab" data-filter="audio">Audio</button>
+                        <button class="filter-tab" data-filter="gaming">Gaming</button>
+                        <button class="filter-tab" data-filter="accessories">Accessories</button>
+                    </div>
+                    <label class="sort-control">Sort by
+                        <select id="sortSelect" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Top Rated</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="product-grid" id="productGrid" aria-live="polite">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">Best Seller</span>
+                            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80"
+                                alt="Premium smartphone">
+                            <button class="wishlist-btn" data-wishlist="1"
+                                aria-label="Add smartphone to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Smartphones</span>
+                            <h3>Nova X Pro Smartphone</h3>
+                            <div class="product-rating">★★★★★ <span>(128)</span></div>
+                            <div class="product-price">$899.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="1">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80"
+                                alt="Modern smartphone">
+                            <button class="wishlist-btn" aria-label="Add smartphone to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Smartphones</span>
+                            <h3>Pixel Edge Smartphone</h3>
+                            <div class="product-rating">★★★★★ <span>(96)</span></div>
+                            <div class="product-price">$749.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="2">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">Popular</span>
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"
+                                alt="Premium laptop">
+                            <button class="wishlist-btn" aria-label="Add laptop to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Laptops</span>
+                            <h3>ProBook Air Laptop</h3>
+                            <div class="product-rating">★★★★★ <span>(84)</span></div>
+                            <div class="product-price">$1,199.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="3">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                                alt="Wireless headphones">
+                            <button class="wishlist-btn" aria-label="Add headphones to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Audio</span>
+                            <h3>SoundMax Wireless Headphones</h3>
+                            <div class="product-rating">★★★★★ <span>(152)</span></div>
+                            <div class="product-price">$199.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="4">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">New</span>
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                                alt="Modern smartwatch">
+                            <button class="wishlist-btn" aria-label="Add smartwatch to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Wearables</span>
+                            <h3>Pulse Smartwatch</h3>
+                            <div class="product-rating">★★★★☆ <span>(73)</span></div>
+                            <div class="product-price">$249.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="5">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=600&q=80"
+                                alt="Gaming console">
+                            <button class="wishlist-btn" aria-label="Add gaming console to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Gaming</span>
+                            <h3>NextGen Gaming Console</h3>
+                            <div class="product-rating">★★★★★ <span>(112)</span></div>
+                            <div class="product-price">$499.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="6">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=600&q=80"
+                                alt="Wireless earbuds">
+                            <button class="wishlist-btn" aria-label="Add earbuds to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Audio</span>
+                            <h3>AirBeat Wireless Earbuds</h3>
+                            <div class="product-rating">★★★★☆ <span>(91)</span></div>
+                            <div class="product-price">$129.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="7">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
+                                alt="Digital camera">
+                            <button class="wishlist-btn" aria-label="Add camera to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Cameras</span>
+                            <h3>CapturePro Digital Camera</h3>
+                            <div class="product-rating">★★★★★ <span>(67)</span></div>
+                            <div class="product-price">$649.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="8">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">Trending</span>
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80"
+                                alt="Smartwatch with digital display">
+                            <button class="wishlist-btn" aria-label="Add smartwatch to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Wearables</span>
+                            <h3>ActiveFit Watch</h3>
+                            <div class="product-rating">★★★★★ <span>(103)</span></div>
+                            <div class="product-price">$179.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="9">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80"
+                                alt="Over-ear headphones">
+                            <button class="wishlist-btn" aria-label="Add headphones to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Audio</span>
+                            <h3>StudioSound Headphones</h3>
+                            <div class="product-rating">★★★★☆ <span>(58)</span></div>
+                            <div class="product-price">$159.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="10">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80"
+                                alt="Computer monitor">
+                            <button class="wishlist-btn" aria-label="Add monitor to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Accessories</span>
+                            <h3>UltraView Monitor</h3>
+                            <div class="product-rating">★★★★★ <span>(76)</span></div>
+                            <div class="product-price">$329.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="11">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=80"
+                                alt="Wireless computer mouse">
+                            <button class="wishlist-btn" aria-label="Add mouse to wishlist">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Accessories</span>
+                            <h3>Precision Wireless Mouse</h3>
+                            <div class="product-rating">★★★★☆ <span>(64)</span></div>
+                            <div class="product-price">$59.00</div>
+                            <button class="btn btn-primary add-to-cart" data-product-id="12">Add to Cart</button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <i data-lucide="search-x"></i>
+                    <h3>No products found</h3>
+                    <p>Try another search or category.</p>
+                    <button class="btn btn-primary" id="clearFiltersButton">Clear filters</button>
+                </div>
+
+                <div class="products-bottom"><span id="productResultsCount">Explore our collection</span><button
+                        class="btn btn-outline" id="showAllProducts">Explore All Products <i
+                            data-lucide="arrow-right"></i></button></div>
+            </div>
+        </section>
+
+        <section class="deal-section section-padding" id="deals">
+            <div class="container">
+                <div class="deal-banner">
+                    <div class="deal-content">
+                        <span class="deal-label"><i data-lucide="zap"></i> LIMITED-TIME OFFER</span>
+                        <h2>Big tech.<br><span>Smaller prices.</span></h2>
+                        <p>Find your next favorite gadget in our featured deals collection.</p>
+                        <a href="#products" class="btn btn-light">Shop the Deals <i
+                                data-lucide="arrow-up-right"></i></a>
+                    </div>
+                    <div class="deal-visual">
+                        <div class="deal-circle"></div>
+                        <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=800&q=85"
+                            alt="Premium wireless earbuds">
+                        <div class="deal-sticker"><span>TECH</span><strong>DEALS</strong><small>YOU'LL LOVE</small>
+                        </div>
+                    </div>
+                    <div class="deal-decoration">VOLTIX / SPECIAL DROP</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section section-padding" id="featured">
+            <div class="container featured-grid">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=1000&q=85"
+                        alt="Featured modern smartphone">
+                    <span class="featured-image-label"><i data-lucide="star"></i> EDITOR'S PICK</span>
+                </div>
+                <div class="featured-content">
+                    <span class="section-kicker">TECH SPOTLIGHT</span>
+                    <h2>Designed to do<br>more. <span>Made for you.</span></h2>
+                    <p>From your everyday essentials to your next big upgrade, discover devices that combine thoughtful
+                        design with impressive performance.</p>
+                    <div class="featured-points">
+                        <div><i data-lucide="check-circle-2"></i><span>Carefully selected products</span></div>
+                        <div><i data-lucide="check-circle-2"></i><span>Modern technology, made simple</span></div>
+                        <div><i data-lucide="check-circle-2"></i><span>Options for every setup</span></div>
+                    </div>
+                    <a href="#products" class="btn btn-primary">Discover the Collection <i
+                            data-lucide="arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section section-padding" id="newsletter">
+            <div class="container newsletter-box">
+                <div class="newsletter-icon"><i data-lucide="mail"></i></div>
+                <div class="newsletter-content">
+                    <span class="section-kicker">THE VOLTIX DROP</span>
+                    <h2>Good tech news. <span>Zero noise.</span></h2>
+                    <p>Sign up for product launches, new arrivals and occasional exclusive offers.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <label for="newsletterEmail" class="visually-hidden">Your email address</label>
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                    <button type="submit" aria-label="Subscribe"><i data-lucide="arrow-right"></i></button>
+                    <small id="newsletterMessage">By subscribing, you agree to receive store updates.</small>
+                </form>
+            </div>
+        </section>
+
+        <section class="support-section section-padding" id="support">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="section-kicker">HERE WHEN YOU NEED US</span>
+                        <h2>Questions? <span>We've got you.</span></h2>
+                    </div>
+                    <p>Find answers to common questions about shopping with Voltix.</p>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>How do I place an order?<i data-lucide="plus"></i></summary>
+                        <p>Browse the collection, add your favorite products to the cart and follow the checkout steps.
+                            This demo storefront uses a simulated checkout.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Are the products genuine?<i data-lucide="plus"></i></summary>
+                        <p>Voltix is a frontend demonstration store. Product listings and store policies are sample
+                            content and do not represent a verified retailer.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I change or cancel an order?<i data-lucide="plus"></i></summary>
+                        <p>This demo does not process real orders. In a production store, order changes would be handled
+                            through a secure order-management system.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How can I contact support?<i data-lucide="plus"></i></summary>
+                        <p>Use the contact options provided by the actual retailer. A live support or contact system can
+                            be integrated when the store backend is configured.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand-column">
+                <a href="#home" class="brand footer-brand">
+                    <span class="brand-icon">V<span>•</span></span>
+                    <span class="brand-name">voltix<span class="brand-dot">.</span></span>
+                </a>
+                <p>Technology for your everyday. Discover smarter devices, thoughtful accessories and a better way to
+                    shop tech.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i
+                            data-lucide="youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-column">
+                <h3>Shop</h3>
+                <a href="#products">All Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#deals">Special Deals</a>
+                <a href="#featured">Featured Picks</a>
+            </div>
+
+            <div class="footer-links-column">
+                <h3>Categories</h3>
+                <a href="#products" data-category-link="smartphones">Smartphones</a>
+                <a href="#products" data-category-link="laptops">Laptops</a>
+                <a href="#products" data-category-link="audio">Headphones & Audio</a>
+                <a href="#products" data-category-link="gaming">Gaming Gear</a>
+            </div>
+
+            <div class="footer-links-column">
+                <h3>Help</h3>
+                <a href="#support">FAQs & Support</a>
+                <a href="#support">Shipping Information</a>
+                <a href="#support">Returns & Exchanges</a>
+                <a href="#newsletter">Get Updates</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© <span id="currentYear"></span> Voltix. Demo storefront for portfolio purposes.</p>
+            <div class="footer-legal"><a href="#support">Privacy</a><a href="#support">Terms</a></div>
+        </div>
+
+        <div class="powered-by">
+            <span>Designed & developed by</span>
+            <a href="https://arslan-weblab.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="powered-brand">
+                <img class="my-logo-pic" src="logo.webp" alt="">
+                <span class="powered-text">Arslan <strong>Weblab</strong></span>
+            </a>
+            <span class="powered-caption">Digital experiences, thoughtfully built.</span>
+        </div>
+        <nav class="sub-footer-bar">
+            <div class="sub-footer-container">
+                <a href="https://arslan-weblab.netlify.app/" target="_blank">Portfolio</a>
+                <a href="https://arslan-weblab.netlify.app/#projects" target="_blank">Projects</a>
+                <a href="https://github.com/arslansahil850-alt/" target="_blank">GitHub</a>
+            </div>
+        </nav>
+        <div class="demo-notice">
+            <strong>Demo Project</strong>
+            <span>This website is a frontend demo created for portfolio purposes.</span>
+        </div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="side-drawer cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+        <div class="drawer-header">
+            <div><span class="section-kicker">YOUR SELECTION</span>
+                <h2>Your Cart <span id="cartTitleCount">(0)</span></h2>
+            </div>
+            <button class="icon-button" data-close-drawer aria-label="Close cart"><i data-lucide="x"></i></button>
+        </div>
+        <div class="drawer-body" id="cartItems">
+            <div class="drawer-empty"><i data-lucide="shopping-bag"></i>
+                <h3>Your cart is empty</h3>
+                <p>Add something you love to get started.</p>
+            </div>
+        </div>
+        <div class="drawer-footer" id="cartFooter">
+            <div class="cart-subtotal"><span>Subtotal</span><strong id="cartSubtotal">Rs 0</strong></div>
+            <p>Shipping and taxes are calculated at checkout.</p>
+            <button class="btn btn-primary btn-full" id="checkoutButton">Continue to Checkout <i
+                    data-lucide="arrow-right"></i></button>
+            <button class="continue-shopping" data-close-drawer>Continue shopping</button>
+        </div>
+    </aside>
+
+    <aside class="side-drawer wishlist-drawer" id="wishlistDrawer" aria-label="Wishlist" aria-hidden="true">
+        <div class="drawer-header">
+            <div><span class="section-kicker">SAVED FOR LATER</span>
+                <h2>Your Wishlist</h2>
+            </div>
+            <button class="icon-button" data-close-drawer aria-label="Close wishlist"><i data-lucide="x"></i></button>
+        </div>
+        <div class="drawer-body" id="wishlistItems">
+            <div class="drawer-empty"><i data-lucide="heart"></i>
+                <h3>Nothing saved yet</h3>
+                <p>Tap the heart on a product to save it here.</p>
+            </div>
+        </div>
+    </aside>
+
+    <section class="modal product-modal" id="productModal" role="dialog" aria-modal="true" aria-label="Product details"
+        aria-hidden="true">
+        <button class="modal-close icon-button" data-close-modal aria-label="Close product details"><i
+                data-lucide="x"></i></button>
+        <div class="modal-content" id="productModalContent"></div>
+    </section>
+
+    <section class="modal account-modal" id="accountModal" role="dialog" aria-modal="true"
+        aria-labelledby="accountModalTitle" aria-hidden="true">
+        <button class="modal-close icon-button" data-close-modal aria-label="Close account"><i
+                data-lucide="x"></i></button>
+        <div class="account-modal-content">
+            <div class="account-modal-icon"><i data-lucide="user-round"></i></div>
+            <span class="section-kicker">WELCOME TO VOLTIX</span>
+            <h2 id="accountModalTitle">Your tech, your way.</h2>
+            <p>This portfolio demo does not have real customer accounts yet.</p>
+            <button class="btn btn-primary btn-full" data-close-modal>Continue Shopping</button>
+        </div>
+    </section>
+
+    <section class="modal checkout-modal" id="checkoutModal" role="dialog" aria-modal="true"
+        aria-labelledby="checkoutTitle" aria-hidden="true">
+        <button class="modal-close icon-button" data-close-modal aria-label="Close checkout"><i
+                data-lucide="x"></i></button>
+        <div class="checkout-content">
+            <div class="checkout-icon"><i data-lucide="shopping-cart"></i></div>
+            <span class="section-kicker">DEMO CHECKOUT</span>
+            <h2 id="checkoutTitle">Almost yours.</h2>
+            <p>Your cart is ready, but this is a frontend-only demonstration. No payment or real order will be
+                processed.</p>
+            <div class="checkout-total"><span>Cart total</span><strong id="checkoutTotal">Rs 0</strong></div>
+            <button class="btn btn-primary btn-full" id="finishCheckout">Back to Store</button>
+        </div>
+    </section>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
